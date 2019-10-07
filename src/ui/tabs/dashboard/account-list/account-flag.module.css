@@ -1,0 +1,26 @@
+.flag {
+  width: 24px;
+  height: 24px;
+}
+
+.flag::after {
+  content: '';
+  display: block;
+  transform: scale(.5);
+  transform-origin: 0% 0%;
+  width: 48px;
+  height: 48px;
+  background-image: url('https://assets.revolut.com/media/roundFlag/sprite-48-with-bonaire.png');
+}
+
+.eur::after {
+  background-position: 0 -3072px;
+}
+
+.usd::after {
+  background-position: 0 -9936px;
+}
+
+.gbp::after {
+  background-position: 0 -3456px;
+}
